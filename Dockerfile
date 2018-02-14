@@ -18,7 +18,7 @@ RUN cd open-zwave
 RUN make && sudo make install
 RUN ldconfig
 
-EXPORT  LD_LIBRARY_PATH=/usr/local/lib/:RUNLD_LIBRARY_PATH
+ENV  LD_LIBRARY_PATH=/usr/local/lib/:RUNLD_LIBRARY_PATH
 
 
 RUN cd
